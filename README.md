@@ -1,6 +1,6 @@
 # cardano-blockfrost-api
 
-Introduction
+## Introduction
 
     Blockfrost (https://blockfrost.io/) provides an API to access data stored on the Cardano blockchain. 
     Python is used to communicate, extract, manipulate, and store data fetched from the API. Our stored data 
@@ -9,7 +9,7 @@ Introduction
     https://github.com/psilosanctum/cardano-blockfrost-api. The repository will be updated at the end of each 
     Cardano epoch (i.e. 5 days) to account for staking rewards distributions.
 
-Illustrations - Background Information
+## Illustrations - Background Information
 
     Figure 1 - Gross Income vs. Staking Rewards
     
