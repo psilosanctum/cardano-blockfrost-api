@@ -1,0 +1,9 @@
+{
+    "c2catalyst_rewards": "raw_rewards/c2catalyst.csv",
+    "c2crypto_rewards": "raw_rewards/c2crypto.csv",
+    "c2thecount_rewards": "raw_rewards/c2thecount.csv",
+    "c2thecryptocount_rewards": "raw_rewards/c2thecryptocount.csv",
+    "c2cypher_rewards": "raw_rewards/c2cypher.csv",
+    "c2sanctum_rewards": "raw_rewards/c2sanctum.csv",
+    "princey_rewards": "raw_rewards/princey.csv"
+}

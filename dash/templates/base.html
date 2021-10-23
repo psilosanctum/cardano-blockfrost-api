@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=" utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Cardano Dashboard </title>
+    {% include 'base/css.html' %}
+    {% include 'base/js.html' %}
+</head>
+
+<body style="background-color: #d3d3d3  ; font-family: 'Montserrat', sans-serif;">
+
+    <div class="container-fluid" style="margin-top: 15px;">
+        <div class="d-flex justify-content-center">
+            <div class="row" style="width: 100%; height: auto;">
+
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-center" style="width: 100%;">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card bg-light  border-dark mb-3"
+                                        style="justify-content: center; margin: 15px; width: 100%;">
+                                        <div class="card bg-light border-dark mb-3" style="margin: 10px;">
+                                            <div class="card-title" style="margin-top: 2.5%">
+                                                <h3 style="text-align: center; color: gray; font-weight: bold;">
+                                                    Gross Income ($) vs. Staking Rewards (₳)
+                                                </h3>
+                                                <div class="card-subtitle"
+                                                    style="text-align: center; color: gray; padding-top: 5px;"
+                                                    id="datetime_bar">
+                                                </div>
+                                            </div>
+                                            <div class="card-body" style="width: 100%; height: auto;">
+                                                <canvas id="rewardsChartLine" height="600" width="1350"></canvas>
+                                                <p style="font-size: .7em; font-weight: bolder; margin-top: 1.5vh">
+                                                    Figure 1. To illustrate the effect on taxable income recognized per
+                                                    epoch as a consequence of market price appreciation and variations
+                                                    in rewards payouts resulting from stake pool performance.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-center" style="width: 100%;">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card bg-light  border-dark mb-3"
+                                        style="justify-content: center; margin: 15px; width: 100%;">
+                                        <div class="card bg-light border-dark mb-3" style="margin: 10px;">
+                                            <div class="card-title" style="margin-top: 2.5%">
+                                                <h3 style="text-align: center; color: gray; font-weight: bold;">
+                                                    Transaction Fees (₳) vs. Transactions
+                                                </h3>
+                                                <div class="card-subtitle"
+                                                    style="text-align: center; color: gray; padding-top: 5px;"
+                                                    id="transaction_datetime_bar">
+                                                </div>
+                                            </div>
+                                            <div class="card-body" style="width: 100%; height: auto;">
+                                                <canvas id="transactionsChartLine" height="600" width="1350"></canvas>
+                                                <p style="font-size: .7em; font-weight: bolder; margin-top: 1.5vh">
+                                                    Figure 2. To illustrate Cardano's transaction fee stability as the
+                                                    amount of transactions increases over time.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-center" style="width: 100%;">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card bg-light  border-dark mb-3"
+                                        style="justify-content: center; margin: 15px; width: 100%;">
+                                        <div class="card bg-light border-dark mb-3" style="margin: 10px;">
+                                            <div class="card-title" style="margin-top: 2.5%">
+                                                <h3 style="text-align: center; color: gray; font-weight: bold;">
+                                                    Average Cost per Transaction
+                                                </h3>
+                                                <div class="card-subtitle"
+                                                    style="text-align: center; color: gray; padding-top: 5px;"
+                                                    id="avg_cost_datetime_bar">
+                                                </div>
+                                            </div>
+                                            <div class="card-body" style="width: 100%; height: auto;">
+                                                <canvas id="avgCostChartLine" height="600" width="1350"></canvas>
+                                                <p style="font-size: .7em; font-weight: bolder; margin-top: 1.5vh">
+                                                    Figure 3. To compare the average cost per transaction by epoch.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                {% block transactions_over_time_jquery %}
+                {% endblock transactions_over_time_jquery %}
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                {% block avg_cost_over_time_jquery %}
+                {% endblock avg_cost_over_time_jquery %}
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                {% block rewards_over_time_jquery %}
+                {% endblock rewards_over_time_jquery %}
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var dt = new Date();
+                document.getElementById('datetime_bar').innerHTML = dt.toLocaleDateString("en-US", options)
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var dt = new Date();
+                document.getElementById('transaction_datetime_bar').innerHTML = dt.toLocaleDateString("en-US", options)
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var dt = new Date();
+                document.getElementById('avg_cost_datetime_bar').innerHTML = dt.toLocaleDateString("en-US", options)
+            })
+        </script>
+</body>
