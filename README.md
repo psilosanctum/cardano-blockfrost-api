@@ -10,7 +10,7 @@
     Django REST Framework, HTML, CSS, Javascript (CanvasJS for charting). The repository will be updated 
     at the end of each Cardano epoch (i.e. 5 days) to account for staking rewards distributions.
 
-## Illustrations - Background Information
+## Background Information
 
 ###### Figure 1 - Gross Income vs. Staking Rewards
     
