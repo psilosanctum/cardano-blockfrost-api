@@ -31,7 +31,7 @@
     
 ![Gross Income](https://github.com/psilosanctum/cardano-blockfrost-api/blob/main/graph_screenshots/gross_income_vs_staking.png)
 
-###### Figure 2 & 3 - Transactions
+###### Figure 2-3 - Transactions
 
     Transaction data provides key insights on the growth of the Cardano network and its tokenomics.
     Our graphics illustrate stability in fees as transaction volume increases significantly over time.
