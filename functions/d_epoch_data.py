@@ -32,10 +32,10 @@ def getStakingRewards(address: str):
         request = api.epoch(address["epoch"])
         row_list.append(request)
         df = pd.read_csv("epoch_data/epoch_data.csv", index_col=[0])
-        df1 = pd.DataFrame(row_list)
-        new_df = df.append(df1)
-        new_df.to_csv("epoch_data/epoch_data.csv")
-        print(new_df)
+        request_df = pd.DataFrame(row_list)
+        append_df = df.append(request_df)
+        append_df.to_csv("epoch_data/epoch_data.csv")
+        print(append_df)
 
     except ApiError as e:
         print(e)
