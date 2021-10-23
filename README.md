@@ -2,14 +2,13 @@
 
 ## Introduction
 
+    Link to this project's Github repository: https://github.com/psilosanctum/cardano-blockfrost-api
+
     Blockfrost (https://blockfrost.io/) provides an API to access data stored on the Cardano blockchain. 
     Python is used to communicate, extract, manipulate, and store data fetched from the API. Our stored 
     data is illustrated via webpage. Technologies used to output the webpage include: Django Web Framework, 
-    Django REST Framework, HTML, CSS, Javascript (CanvasJS for charting). 
-    
-    Link to this project's Github repository: https://github.com/psilosanctum/cardano-blockfrost-api
-    The repository will be updated at the end of each Cardano epoch (i.e. 5 days) to account for staking 
-    rewards distributions.
+    Django REST Framework, HTML, CSS, Javascript (CanvasJS for charting). The repository will be updated 
+    at the end of each Cardano epoch (i.e. 5 days) to account for staking rewards distributions.
 
 ## Illustrations - Background Information
 
