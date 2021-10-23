@@ -45,3 +45,5 @@
 ![Fees vs. Transactions](https://github.com/psilosanctum/cardano-blockfrost-api/blob/main/graph_screenshots/fees_vs_transactions.png)
 
 ![Average Cost](https://github.com/psilosanctum/cardano-blockfrost-api/blob/main/graph_screenshots/avg_cost.png)
+
+
