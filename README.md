@@ -37,7 +37,10 @@
     Our graphics illustrate stability in fees as transaction volume increases significantly over time.
     Despite the increase in network activity, the cost to transact (i.e. the cost to do business) on 
     the blockchain remains relatively predictable. Ethereum cannot claim comparable transaction fee 
-    stability; therefore, Cardano's network currently offers both superior tokenomics and technology.
+    stability. Additionally, Ethereum is still in the process of upgrading its protocol from 
+    proof-of-work to proof-of-stake, and their progress has been subject to technological barriers.
+    Cardano already utilizes proof-of-stake technology; therefore, the network currently offers both 
+    superior tokenomics and technology.
 
 ![Fees vs. Transactions](https://github.com/psilosanctum/cardano-blockfrost-api/blob/main/graph_screenshots/fees_vs_transactions.png)
 
