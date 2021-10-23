@@ -11,7 +11,7 @@
 
 ## Illustrations - Background Information
 
-    ###### Figure 1 - Gross Income vs. Staking Rewards
+###### Figure 1 - Gross Income vs. Staking Rewards
     
     $ADA token holders contribute to network security and operations on the Cardano blockchain by holding 
     their funds in a crypto wallet and delegating to a stake pool. Token holders are rewarded for their 
@@ -30,7 +30,7 @@
     
 ![Gross Income](https://github.com/psilosanctum/cardano-blockfrost-api/blob/main/graph_screenshots/gross_income_vs_staking.png)
 
-    ###### Figure 2 & 3 - Transactions
+###### Figure 2 & 3 - Transactions
 
     Transaction data provides key insights on the growth of the Cardano network over time and the 
     blockchain's tokenomics. Our graphics illustrate stability in fees as transaction volume increases 
