@@ -37,8 +37,7 @@ def getStakingRewards(address: str):
             amount_list.append(i.amount)
             pool_list.append(i.pool_id)
 
-        df = pd.read_csv(
-            "addresses/template.csv".format(address['account']), index_col=[0])
+        df = pd.DataFrame()
         df['amount'] = amount_list
         df['epoch'] = epoch_list
         df['pool_id'] = pool_list
