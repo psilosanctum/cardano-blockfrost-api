@@ -26,4 +26,4 @@ Illustrations - Background Information
     effect is an automated rewards tracking process with formatted data that serves as inputs to our graphic 
     illustrations. Additionally, our manipulated data is stored effectively to facilitate tax compliance.
     
-    https://github.com/psilosanctum/cardano-blockfrost-api/blob/master/graph_screenshots/gross_income_vs_staking.png
+![Gross Income](https://github.com/psilosanctum/cardano-blockfrost-api/blob/main/graph_screenshots/gross_income_vs_staking.png)
