@@ -11,7 +11,7 @@
 
 ## Illustrations - Background Information
 
-    Figure 1 - Gross Income vs. Staking Rewards
+    **Figure 1 - Gross Income vs. Staking Rewards**
     
     $ADA token holders can contribute to network security and operations on the Cardano blockchain by holding 
     their funds in a crypto wallet and delegating to a stake pool. Token holders are rewarded for their services 
@@ -28,13 +28,13 @@
     
 ![Gross Income](https://github.com/psilosanctum/cardano-blockfrost-api/blob/main/graph_screenshots/gross_income_vs_staking.png)
 
-    Figure 2 & 3 - Transactions
+    **Figure 2 & 3 - Transactions**
 
     Transaction data provides key insights on the growth of the Cardano network over time and the blockchain's 
-    tokenomics. Our graphics illustrate stability in transaction fees as transaction volume increases 
-    significantly. Despite the increase in network activity, the cost to transact (i.e. the cost to do business)
-    on Cardano's blockchain remains relatively predictable. Ethereum cannot claim similar transaction 
-    fee stability; therefore, Cardano's network currently offers both superior tokenomics and technology.
+    tokenomics. Our graphics illustrate stability in fees as transaction volume increases significantly. 
+    Despite the increase in network activity, the cost to transact (i.e. the cost to do business) on Cardano's
+    blockchain remains relatively predictable. Ethereum cannot claim similar transaction fee stability; 
+    therefore, Cardano's network currently offers both superior tokenomics and technology.
 
 ![Fees vs. Transactions](https://github.com/psilosanctum/cardano-blockfrost-api/blob/main/graph_screenshots/fees_vs_transactions.png)
 
