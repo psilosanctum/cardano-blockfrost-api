@@ -32,12 +32,11 @@
 
 ###### Figure 2 & 3 - Transactions
 
-    Transaction data provides key insights on the growth of the Cardano network over time and the 
-    blockchain's tokenomics. Our graphics illustrate stability in fees as transaction volume increases 
-    significantly. Despite the increase in network activity, the cost to transact (i.e. the cost to 
-    do business) on the blockchain remains relatively predictable. Ethereum cannot claim similar 
-    transaction fee stability; therefore, Cardano's network currently offers both superior tokenomics 
-    and technology.
+    Transaction data provides key insights on the growth of the Cardano network and its tokenomics.
+    Our graphics illustrate stability in fees as transaction volume increases significantly over time.
+    Despite the increase in network activity, the cost to transact (i.e. the cost to do business) on 
+    the blockchain remains relatively predictable. Ethereum cannot claim similar transaction fee 
+    stability; therefore, Cardano's network currently offers both superior tokenomics and technology.
 
 ![Fees vs. Transactions](https://github.com/psilosanctum/cardano-blockfrost-api/blob/main/graph_screenshots/fees_vs_transactions.png)
 
